@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "better-console",
+	"version": "${version}",
+	"name": "Better Console",
+	"description": "A lightweight JLine-based improvement for the basic Minecraft server console.",
+	"authors": [
+		"hanhy06"
+	],
+	"contact": {
+		"sources": "https://github.com/hanhy06/better-console"
+	},
+	"license": "Apache-2.0",
+	"icon": "assets/better-console/icon.png",
+	"environment": "server",
+	"entrypoints": {
+		"main": [
+			"io.github.hanhy06.betterconsole.BetterConsole"
+		]
+	},
+	"mixins": [
+		"better-console.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": ">=26.1",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
